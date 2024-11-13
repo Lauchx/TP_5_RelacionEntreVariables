@@ -1,0 +1,53 @@
+<table>
+    <thead>
+        <tr>
+            <th>
+                Presión
+            </th>
+            <th>
+                Temperatura
+            </th>
+            <th>
+                Humedad
+            </th>
+            <th>
+                Viento
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let value of values">
+            <td>{{value.presion}}</td>
+            <td>{{value.temperatura}}</td>
+            <td>{{value.humedad}}</td>
+            <td>{{value.viento}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="title">
+    <h3>Presión y Temperatura: {{results[0]}}</h3>
+    <div id="0"></div>
+</div>
+<div class="title">
+    <h3>Presión y Humedad: {{results[1]}}</h3>
+    <div id="1"></div>
+</div>
+<div class="title">
+    <h3>Presión y Velocidad del viento: {{results[2]}}</h3>
+    <div id="2"></div>
+</div>
+
+<div class="title">
+    <h3>Temperatura y Humedad: {{results[3]}}</h3>
+    <div id="3"></div>
+</div>
+
+<div class="title">
+    <h3>Temperatura y Velocidad del viento: {{results[4]}}</h3>
+    <div id="4"></div>
+</div>
+<div class="title">
+    <h3>Velocidad del viento y Humedad: {{results[5]}}</h3>
+    <div id="5"></div>
+</div>
